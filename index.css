@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(42, 41, 41);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    color: rgb(223, 240, 255);
+    font-size: 15px;  
+}
+
+
+
+#chat-form {
+    width: 100%;
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+input{
+    width: 83%;
+    border-radius: 10px;
+
+}
+
+img {
+    background: rgb(223, 240, 255);
+    border: 10px solid;
+    border-radius: 10px;
+    width: 40px;
+}
+
+.bouton img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.bouton {
+    width: 25px;
+    height: 25px;
+    border-radius: 25%;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0;
+}
+

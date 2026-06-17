@@ -1,0 +1,8 @@
+{
+    "liveServer.settings.proxy": {
+        "enable": true,
+        "baseUri": "/api",
+        "proxyUri": "http://localhost:11434/api"
+    },
+    "livePreview.defaultPreviewPath": "/index.html"
+}
