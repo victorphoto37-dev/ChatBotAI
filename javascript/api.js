@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const textElement = document.createElement("span");
 
-        const formattedText = formatCodeBlocks(text);
+        const formattedText = marked.parse(text);
         textElement.innerHTML = formattedText;
 
         messageElement.appendChild(senderElement);

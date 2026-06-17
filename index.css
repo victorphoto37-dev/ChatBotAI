@@ -236,3 +236,37 @@ input[type="text"]:focus {
 .bouton:active {
     transform: scale(0.96);
 }
+
+.assistant-message h1,
+.assistant-message h2,
+.assistant-message h3 {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.assistant-message ul,
+.assistant-message ol {
+    margin: 10px 0;
+    padding-left: 25px;
+}
+
+.assistant-message li {
+    margin: 5px 0;
+}
+
+.assistant-message strong {
+    font-weight: bold;
+}
+
+.assistant-message code {
+    background: #222;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+.assistant-message pre {
+    background: #111;
+    padding: 12px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
