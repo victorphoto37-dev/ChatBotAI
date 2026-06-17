@@ -18,22 +18,16 @@ body {
 }
 
 input{
-    width: 83%;
+    width: 92%;
     border-radius: 10px;
-
+    margin-right: auto;
 }
 
-img {
+.reset-button {
     background: rgb(223, 240, 255);
     border: 10px solid;
     border-radius: 10px;
     width: 40px;
-}
-
-.bouton img {
-    width: 70%;
-    height: 70%;
-    object-fit: contain;
 }
 
 .bouton {
@@ -46,3 +40,38 @@ img {
     padding: 0;
 }
 
+.user-message {
+    background-color: rgb(86, 80, 80);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+    max-width: 70%;
+    margin-left: auto;
+    -webkit-box-shadow: 9px 8px 0px 0px rgba(74,255,235,0.45); 
+    box-shadow: 5px 5px 0px 0px rgba(74,255,235,0.45);
+    
+}
+
+.assistant-message {
+    background-color: rgb(123, 30, 30);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 70%;
+    margin-right: auto;
+    -webkit-box-shadow: 9px 8px 0px 0px rgb(255, 30, 0); 
+    box-shadow: -5px 5px 0px 0px rgba(255, 30, 0, 0.45);
+}
+
+
+.loading-indicator {
+    display: flex;
+    align-items: center; /* aligne verticalement */
+    gap: 10px; /* espace entre l'icône et le texte */
+}
+
+
+.loading-indicator img {
+    width: 25px;
+    height: 25px;
+}

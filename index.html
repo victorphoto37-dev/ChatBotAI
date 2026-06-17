@@ -13,15 +13,19 @@
     <div class="chat-container">
         <h1>Chat IA</h1>
         <img id="reset-chat-button" class="reset-button" src="assets/images/new.png" alt="Nouvelle conversation">
-        <div id="chat-messages" class="chat-messages"></div>
+        <div id="chat-messages" class="chat-messages">
+            <div class="user-message">Texte de l'utilisateur</div>
 
+            <div class="message assistant-message">Réponse de l'IA</div>
+        </div>
         <div id="loading-indicator" class="loading-indicator" style="display: none;">
-            En attente de réponse...
+            <img src="assets/images/load.gif" alt="Chargement..." class="loading-indicator">
+            Chat réfléchi...
         </div>
 
         <form id="chat-form" class="chat-form">
             <input type="text" id="user-input" placeholder="Posez votre question..." autocomplete="off">
-            
+
             <button class="bouton" type="submit">
                 <img src="assets/images/send.png" class="bouton" type="submit">
             </button>
