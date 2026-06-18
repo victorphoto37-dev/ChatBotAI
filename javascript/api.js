@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const messages = [{ role: "system" }, ...conversationHistory];
 
             const requestData = {
-                model: "qwen2.5:7b",
+                model: "llama3.2:3b",
                 messages: messages,
                 stream: false,
             };
