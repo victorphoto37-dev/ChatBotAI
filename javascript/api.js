@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const chatMessages = document.getElementById("chat-messages");
     const loadingIndicator = document.getElementById("loading-indicator");
     const resetButton = document.getElementById("reset-chat-button");
-    const OLLAMA_API_URL = "http://localhost:11434/api/chat";
+    const OLLAMA_API_URL = "http://100.111.22.1:11434/api/chat";
 
     let conversationHistory = [];
 
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const messages = [{ role: "system" }, ...conversationHistory];
 
             const requestData = {
-                model: "llama3.2:3b",
+                model: "deepseek-coder:6.7b",
                 messages: messages,
                 stream: false,
             };
@@ -85,7 +85,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 "Désolé, une erreur est survenue lors de la communication avec l'IA."
             );
         } finally {
-            loadingIndicator.style.display = "none";
+            // Délai minimum pour voir l'indicateur de chargement
+            setTimeout(() => {
+                loadingIndicator.style.display = "none";
+            }, 800);
         }
     });
 
