@@ -13,12 +13,15 @@
 
 <body>
     <div class="nav-bar">
+        <a href="home.html">
+            <img src="assets/images/favicon.png" alt="Logo stylise de Chat IA avec un cercle bleu et les lettres IA" class="logo">
+        </a>
         <h1 class="title">Chat IA</h1>
         <img
             id="reset-chat-button"
             class="reset-button"
             src="assets/images/new.png"
-            alt="Nouvelle conversation"
+            alt="Bouton nouvelle conversation pour reinitialiser le chat"
             title="Nouvelle conversation">
 
     </div>
@@ -32,7 +35,7 @@
         <div id="chat-messages" class="chat-messages"></div>
 
         <div id="loading-indicator" class="loading-indicator" style="display: none;">
-            <img src="assets/images/load.gif" alt="Chargement...">
+            <img src="assets/images/load.gif" alt="Animation de chargement pendant que le chat IA prepare une reponse">
             Chat réfléchit…
         </div>
     </div>
@@ -46,7 +49,7 @@
             aria-label="Message"
         >
         <button class="bouton" type="submit" aria-label="Envoyer">
-            <img src="assets/images/send.png" alt="Envoyer">
+            <img src="assets/images/send.png" alt="Bouton envoyer message pour soumettre la question">
         </button>
         
     </form>

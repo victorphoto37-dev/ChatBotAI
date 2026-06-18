@@ -4,5 +4,5 @@
         "baseUri": "/api",
         "proxyUri": "http://localhost:11434/api"
     },
-    "livePreview.defaultPreviewPath": "/index.html"
+    "livePreview.defaultPreviewPath": "/home.html"
 }
